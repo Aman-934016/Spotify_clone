@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.body {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.right {
+    width: 75vw;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-top: 16px;
+    background-color: #1e1e1e;
+    position: relative;
+}
+
+.home ul li {
+    list-style: none;
+    width: 14px;
+    display: flex;
+    gap: 15px;
+    padding: 14px 25px;
+    font-weight: bold;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    gap: 15px;
+    font-weight: bold;
+    padding: 14px 25px;
+    font-size: 13px;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.library {
+    min-height: 70vh;
+    position: relative;
+}
+
+.plus {
+    margin-left: 90px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    height: 29px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    /* margin-right: 5px; */
+}
+
+.btn-1 {
+    background-color: #101010;
+    color: #909090;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-right: 30px;
+}
+
+.btn-2 {
+    color: black;
+    border-radius: 20px;
+    font-weight: bolder;
+    outline: none;
+    padding: 10px;
+    border: none;
+    width: 79px;
+    /* font-size: medium; */
+}
+
+.btn-1:hover {
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-2:hover {
+    cursor: pointer;
+    width: 80px;
+}
+
+.hero-section {
+    padding-left: 16px;
+    background-color: #1e1e1e;
+    top: 20px;
+    position: relative;
+    z-index: 9;
+}
+
+.hero-section h1 {
+    font-size: 25px;
+    margin: 0 0 0 16px;
+
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 400px;
+    overflow: auto;
+    scrollbar-color: grey black;
+}
+
+.card {
+    width: 170px;
+    margin: 17px;
+    background-color: #131313;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.play {
+    position: absolute;
+    top: 125px;
+    right: 15px;
+}
+
+.card>* {
+    padding-top: 5px;
+
+}
+
+.card-container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-container h2 {
+    font-size: medium;
+}
+
+.card-container p {
+    font-size: small;
+    color: #5b5b5b;
+}
+
+.playbar {
+    position: fixed;
+    bottom: 13px;
+    right: 15px;
+    background-color: #494546;
+    width: 70vw;
+    padding: 10px;
+    border-radius: 15px;
+    height: 43px;
+}
+
+.seekbar {
+    height: 4px;
+    width: 90%;
+    position: absolute;
+    bottom: 11px;
+    background-color: white;
+    border-radius: 10px;
+    left: 45px;
+    cursor: pointer;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    bottom: 10px;
+    right: 2px;
+    transition: left 0.5s;
+    left: 0%;
+    cursor: pointer;
+}
+
+.playsong {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.play-music {
+    display: flex;
+    justify-content: center;
+    /* width: auto; */
+    gap: 16px;
+
+}
+
+.play-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-now span {
+    width: 70px;
+    font-size: 14px;
+}
+
+.info {
+    width: 73px;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+.song-list {
+    height: 444px;
+    /* overflow: scroll; */
+}
+
+.song-list ul {
+    padding: 0 20px;
+}
+
+.song-list ul li {
+    cursor: pointer;
+    padding: 9px 0;
+    list-style: none;
+    display: flex;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    margin: 14px;
+    font-size: 14px;
+    gap: 34px;
+    /* text-align: center; */
+}
+
+
+/* Style for the track */
+.custom-scrollbar-container {
+    width: 300px;
+    /* Set the desired width for the container */
+    height: 400px;
+    /* Set the desired height for the container */
+    overflow: auto;
+    /* display: flex; */
+    /* Optional: Add border for visual clarity */
+}
+
+/* Style for the thumb */
+.custom-scrollbar-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Style for the thumb */
+.custom-scrollbar-container::-webkit-scrollbar-thumb {
+    background-color: #666;
+    /* Grey color for the thumb */
+    border-radius: 6px;
+}
+
+/* Style for the track */
+.custom-scrollbar-container::-webkit-scrollbar-track {
+    background-color: #222;
+    /* Black color for the track */
+}
+
+/* Optional: Add a hover effect on the thumb */
+.custom-scrollbar-container::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+    /* Lighter grey color on hover */
+}
+
+/* Additional styling for the content inside the container */
+.content {
+    padding: 10px;
+}
+
+
+.playsong img {
+    cursor: pointer;
+}
+
+.songbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#hamburger {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+}
+
+@media (max-width:1326px) {
+    .left {
+        background-color: #222020;
+        position: fixed;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1001;
+        width: 330px;
+        padding: 0;
+    }
+
+    .right {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .playbar {
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .left-button {
+        display: none;
+    }
+
+    .seekbar {
+        width: 85%;
+    }
+
+    .card {
+        width: 43vw;
+    }
+
+    .card-container {
+        height: 100%;
+        overflow: auto;
+        scrollbar-color: grey black;
+    }
+
+    .play {
+        top: 255px;
+    }
+
+    .home {
+        padding: 0;
+    }
+    .library{
+        min-height: 55vh;
+    }
+}
+@media (max-width:450px){
+    .card {
+        width: 83vw;
+    }
+}

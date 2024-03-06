@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="utility.css" class="css">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="close">
+                <img width="30" class="invert" src="cross.svg" alt="">
+            </div>
+            <div class="home rounded bg-grey m1 p1">
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library rounded bg-grey m1 p1">
+                <div class="heading">
+                    <img class="invert playlist" src="playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                    <img class="invert plus" src="plus.svg" alt="">
+                </div>
+                <div class="custom-scrollbar-container">
+                    <div class="content">
+                        <div class="song-list">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="header  bg-grey">
+                <div class="nav">
+                    <img id="hamburger" class="invert" src="hamburger.svg" alt="">
+                    <svg class="invert left-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="invert left-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="button">
+                    <button class="btn-1">Sign up</button>
+                    <button class="btn-2">Log in</button>
+                </div>
+            </div>
+            <div class="hero-section">
+                <h1>Spotify Playlists</h1>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="play">
+                                <svg width="54" height="54" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green circular background with padding -->
+                                    <circle cx="27" cy="27" r="24" fill="#1fdf64" />
+
+                                    <!-- Your original SVG path with padding -->
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                                        class="Svg-sc-ytk21e-0 bneLcE" width="50%" height="50%" x="25%" y="25%">
+                                        <path
+                                            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                        </path>
+                                    </svg>
+                                </svg>
+                            </div>
+                            <img aria-hidden="false" draggable="false" loading="lazy"
+                                src="https://i.scdn.co/image/ab67706f000000024fea192e4badc04a095e1152"
+                                data-testid="card-image" alt=""
+                                class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
+                            <h2>Today’s Top Hits</h2>
+                            <p>Beyoncé is on top of the Hottest 50!</p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <svg width="54" height="54" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green circular background with padding -->
+                                    <circle cx="27" cy="27" r="24" fill="#1fdf64" />
+
+                                    <!-- Your original SVG path with padding -->
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                                        class="Svg-sc-ytk21e-0 bneLcE" width="50%" height="50%" x="25%" y="25%">
+                                        <path
+                                            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                        </path>
+                                    </svg>
+                                </svg>
+                            </div>
+                            <img aria-hidden="false" draggable="false" loading="lazy"
+                                src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de"
+                                data-testid="card-image" alt=""
+                                class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                            <h2>Dinner with Friends</h2>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <svg width="54" height="54" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green circular background with padding -->
+                                    <circle cx="27" cy="27" r="24" fill="#1fdf64" />
+
+                                    <!-- Your original SVG path with padding -->
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                                        class="Svg-sc-ytk21e-0 bneLcE" width="50%" height="50%" x="25%" y="25%">
+                                        <path
+                                            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                        </path>
+                                    </svg>
+                                </svg>
+                            </div>
+                            <img aria-hidden="false" draggable="false" loading="lazy"
+                                src="https://i.scdn.co/image/ab67706f00000002a98e80d2fc9b1cf3b80c4481"
+                                data-testid="card-image" alt=""
+                                class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                            <h2>Dinner Jazz</h2>
+                            <p>The gentle sound of some of the greatest... </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <svg width="54" height="54" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green circular background with padding -->
+                                    <circle cx="27" cy="27" r="24" fill="#1fdf64" />
+
+                                    <!-- Your original SVG path with padding -->
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                                        class="Svg-sc-ytk21e-0 bneLcE" width="50%" height="50%" x="25%" y="25%">
+                                        <path
+                                            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                        </path>
+                                    </svg>
+                                </svg>
+                            </div>
+                            <img aria-hidden="false" draggable="false" loading="lazy"
+                                src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec"
+                                data-testid="card-image" alt=""
+                                class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                            <h2>Feel Good Dinner</h2>
+                            <p>An uplifting yet tasteful dinner playli...</p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <svg width="54" height="54" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green circular background with padding -->
+                                    <circle cx="27" cy="27" r="24" fill="#1fdf64" />
+
+                                    <!-- Your original SVG path with padding -->
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                                        class="Svg-sc-ytk21e-0 bneLcE" width="50%" height="50%" x="25%" y="25%">
+                                        <path
+                                            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                        </path>
+                                    </svg>
+                                </svg>
+                            </div>
+                            <img aria-hidden="false" draggable="false" loading="lazy"
+                                src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec"
+                                data-testid="card-image" alt=""
+                                class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                            <h2>Feel Good Dinner</h2>
+                            <p>An uplifting yet tasteful dinner playli...</p>
+                        </div>
+                    </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songbar">
+                        <div class="song-info"></div>
+                        <div class="playsong">
+                            <img id="prev" class="invert" src="prev.svg" alt="">
+                            <img id="play" class="invert" src="play.svg" alt="">
+                            <img id="next" class="invert" src="next.svg" alt="">
+                        </div>
+                        <div class="song-time"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
