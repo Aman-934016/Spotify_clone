@@ -12,7 +12,7 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 async function getsongs() {
-    let a = await fetch("http://192.168.29.31:3000/Songs/");
+    let a = await fetch("http://127.0.0.1/Songs/");
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
